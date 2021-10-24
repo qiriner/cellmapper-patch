@@ -1,0 +1,140 @@
+.navbar,
+.navbar.p-3
+{
+	padding: 0 !important;	/* base rule is !important too */
+}
+
+.navbar-brand
+{
+	display: none !important;
+}
+
+#map_canvas .ol-overlaycontainer
+{
+	box-shadow: inset 0px 39px 6px 0px rgb(0 0 0 / 66%);
+}
+
+#side_bottom
+{
+	position: fixed;
+	overflow-y: unset;
+	top: 38.5px;
+	box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 66%);
+}
+
+#side_bottom.droptarget
+{
+	outline: 10px dashed var(--primary) !important;
+	outline-offset: -32px;
+}
+
+#side_bottom.droptarget #tabs
+{
+	opacity: 0.2;
+}
+
+table
+{
+	box-shadow: unset;
+}
+
+#tabsList
+{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+}
+#tabsList:after
+{
+	content: '';
+	display: block;
+	position: relative;
+	height: 0.48rem;
+	background: var(--primary);
+	opacity: 0.66;
+	right: 17px;
+}
+
+#tabs-1,
+#tabs-2
+{
+	position: absolute;
+	top: 38.5px;
+	bottom: 0;
+}
+
+#tabs-2 table:last-child
+{
+	margin-bottom: 60rem;
+}
+
+.table.table-sm
+{
+	margin-bottom: 3px;
+}
+
+.table th,
+.table td
+{
+	padding: 0.0rem 0.25rem 0.0rem 0.5rem !important;
+	vertical-align: middle;
+	border-bottom: unset;
+	max-width: 19.5rem;
+	line-height: 1.5rem;
+}
+
+#settings,
+#filters,
+#lacs,
+#bands,
+#frequencies
+{
+	white-space: nowrap;
+}
+
+#tabs-2 table.table.table-striped.table-sm:not(:nth-child(2))
+{
+	border-width: 3px;
+}
+
+#tabs-1 > br:first-child,
+#tabs-2 > br:first-child,
+#tabs-2 table + br
+{
+	display: none;
+}
+
+#feedLink
+{
+	vertical-align: text-bottom;
+}
+
+input[type=text],
+select
+{
+	padding: 0.2rem; 
+}
+
+.caretIcon
+{
+	padding: 0.33rem 0.0rem;
+}
+
+.chosen-container
+{
+	/*font-size: .9rem;*/
+}
+
+.chosen-container .chosen-results li
+{
+	padding: .0rem .0rem .0rem 1.4rem !important;
+	max-height: 1.5rem;
+	overflow-y: hidden;
+}
+
+.chosen-container .chosen-results li.result-selected:before
+{
+	top: 0.1rem;
+	width: 1.25rem;
+	height: 1rem;
+}
